@@ -1,0 +1,254 @@
+body {
+    font-family: Parkinsons, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: left;
+    margin: 0;
+    padding: 25px;
+}
+
+h1 {
+    color: #3498db;
+}
+
+img {
+    position: relative;
+    top: 1px;    /* Verschiebt das Bild 20px nach unten */
+    left: 2px;   /* Verschiebt das Bild 30px nach rechts */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Stellt sicher, dass die Suchleiste von links aus startet */
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.search-container {
+    width: 80%;               /* Breite auf 70% ändern (oder beliebig anpassen) */
+    max-width: 600px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    z-index: 1000;
+    text-align: center;
+    margin-left: 30%;          /* Hiermit schieben wir es nach links (prozentual) */
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    background-color: #fffff;
+    color: white;
+    border: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-container button:hover {
+    background-color: #005bb5;
+}
+
+/* Stile für das Suchleisten-Container */
+.search-container {
+  display: flex; /* Elemente nebeneinander anordnen */
+  align-items: center; /* Vertikale Zentrierung */
+  justify-content: center; /* Zentriert die gesamte Suche horizontal */
+  margin-top: 20px; /* Abstand nach oben */
+}
+
+/* Suchleiste */
+.search-bar {
+  width: 400px; /* Breite der Suchleiste */
+  padding: 10px; /* Innenabstand */
+  border: 1px solid #ccc; /* Rahmen */
+  border-radius: 25px 0 0 25px; /* Abgerundete Ecken links */
+  outline: none; /* Entfernt Fokus-Rand */
+}
+
+/* Such-Button */
+.search-button {
+  padding: 10px 20px; /* Knopfgröße */
+  border: none;
+  background-color: #0073e6; /* Farbe des Knopfes */
+  color: white; /* Textfarbe */
+  border-radius: 0 25px 25px 0; /* Abgerundete Ecken rechts */
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #005bb5; /* Farbe beim Hover */
+}
+
+
+.logo-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.logo {
+  vertical-align: middle;
+  height: 40px; /* Passe die Höhe an dein Logo an */
+}
+
+.dropdown-icon {
+  font-size: 18px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.dropdown-menu {
+  display: none; /* Dropdown versteckt */
+  position: absolute;
+  top: 50px; /* Abstand zum Logo */
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 5px 10px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Dropdown anzeigen bei Hover */
+.logo-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 10px;  /* Abstand vom oberen Rand */
+    right: 10px;  /* Abstand vom rechten Rand */
+}
+
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 150px;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 25%;
+  margin-right: 15px;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;      /* Stellt sicher, dass das Bild die volle Breite der Kachel einnimmt */
+  height: auto;     /* Hält das Seitenverhältnis des Bildes bei */
+  max-width: 200px; /* Maximale Breite des Bildes, du kannst den Wert nach Bedarf anpassen */
+  border-radius: 10px;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+

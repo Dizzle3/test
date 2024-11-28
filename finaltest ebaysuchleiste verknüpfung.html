@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+<link rel="stylesheet" href="finaltest.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBay-Buy it. Sell it. Love it.</title>
+</head>
+<body>
+
+<form class="search-bar" action="https://www.ebay.de/sch/i.html" method="GET">
+        <input type="text" name="_nkw" placeholder="Bei eBay finden" required>
+        <button type="submit">🔍</button>
+    </form>
+
+</body>
+</html>
+
+
+
+<div class="logo-dropdown">
+    <img src="D:/pictures/ebay.png" alt="eBay Logo" class="logo">
+    <div class="logo-dropdown-menu">
+        <a href="https://www.ebay.de/ebayplus/home" target="_self">
+            <img src="D:/pictures/ebayplus.png" alt="eBay Plus Logo" class="logo">
+        </a>
+    </div>
+</div>
+
+
+
+
+ <a href="https://cart.payments.ebay.de/" class="cart-icon" target="_self" title="Zum Warenkorb">
+        🛒
+    </a>
+</div>
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilbild</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Profilbild -->
+    <div class="profile-container">
+        <label for="profile-input">
+            <img src="https://via.placeholder.com/50" alt="Profilbild" class="profile-pic" id="profile-img">
+        </label>
+        <input type="file" id="profile-input" accept="image/*" style="display: none;">
+    </div>
+
+    <script>
+        // Funktion zur Aktualisierung des Profilbilds
+        const profileInput = document.getElementById('profile-input');
+        const profileImg = document.getElementById('profile-img');
+
+        profileInput.addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    profileImg.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+<div class="settings-dropdown-wrapper">
+    <div class="settings-dropdown-toggle">▼</div>
+    <ul class="settings-dropdown-menu">
+        <li><a href="#">Einstellungen</a></li>
+        <li><a href="https://www.ebay.de/vlp/ebaylokal" target="_self">Lokal</a></li>
+        <li><a href="https://www.ebay.de/sl/sell" target="_self">Verkaufen</a></li>
+        <li><a href="#" target="_self">Nachrichten</a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+<div class="category-title">
+    <h2>Unsere Kategorien</h2>
+    <p>Entdecke unsere verschiedenen Kategorien und finde das, was du suchst!</p>
+</div>
+<!-- Container für die Kacheln -->
+<div class="kacheln-container">
+    <!-- Kachel 1 mit eBay-Link -->
+    <a href="https://www.ebay.de/b/Elektronik-Technik/bn_7000259853" target="_self" class="kachel">
+        <div class="text">Elektronik</div>
+    </a>
+    
+    <!-- Kachel 2 mit eBay-Link -->
+    <a href="https://www.ebay.de/b/Motors/bn_7001214406" target="_self" class="kachel">
+        <div class="text">Motors</div>
+    </a>
+    
+    <!-- Kachel 3 mit eBay-Link -->
+    <a href="https://www.ebay.de/b/Haus-Garten/bn_7000259857" target="_self" class="kachel">
+        <div class="text">Haus & Garten</div>
+    </a>
+    
+    <!-- Kachel 4 mit eBay-Link -->
+    <a href="https://www.ebay.de/b/Kleidung-Accessoires/11450/bn_1844911" target="_self" class="kachel">
+        <div class="text">Kleidung & Accessoires</div>
+    </a>
+    
+    <!-- Kachel 5 mit eBay-Link -->
+    <a href="https://www.ebay.de/b/Sammeln-Antiquitaten/bn_7000259666" target="_self" class="kachel">
+        <div class="text">Sammeln</div>
+    </a>
+    
+    <!-- Kachel 6 mit eBay-Link -->
+    <a href="https://www.ebay.de/b/Sportartikel/888/bn_1845308" target="_self" class="kachel">
+        <div class="text">Sport</div>
+    </a>
+    
+    <!-- Kachel 7 mit eBay-Link -->
+    <a href="https://www.ebay.de/b/Business-Industrie/12576/bn_1844931" target="_self" class="kachel">
+        <div class="text">Business & Industrie</div>
+    </a>
+</div>
+
+
+
+<div class="content-wrapper"> 
+<h2>Die besten 2024 Black Friday Deals!</h2> 
+    <div class="carousel-container">
+        <div class="carousel">
+            <a href="https://www.ebay.de/itm/267071167391?_skw=uhr&itmmeta=01JDPVT6YK5F8SWEPV3WZ3AJMP&hash=item3e2eae9b9f:g:kQoAAOSwhlVnPgQn&itmprp=enc%3AAQAJAAAAwHoV3kP08IDx%2BKZ9MfhVJKlrR7vZE%2FNf6VSdc9PioKzduE106gd70d4kT6sETzRRIq0Hs5imFiR6QM7J0RGr8GB2apKsQJ8s4%2FgUtkBdOzHM%2FmIQln8PjrC80aomtKUAeVtD4ZOL338P7Ek3IxYK4a%2FugdANPZNFEazSZsly1o0DnJpU4BClrwYVLt17%2FQKrlSRd0F035MmsKesrGPsaecozCNgc07AUit7rqNSyAOZWG8zBlrHlxH5R3dahAVBAmg%3D%3D%7Ctkp%3ABlBMUNzv6NvtZA" class="carousel-item">
+                <img src="D:/pictures/clock.png" alt="clock">
+            </a>
+            <a href="https://www.ebay.de/itm/234623712873?_skw=f%C3%B6hn&epid=24025070706&itmmeta=01JDPVZRSPN82KHXWN3A75400T&hash=item36a0a9be69:g:YBUAAOSwcnxb0O8k&itmprp=enc%3AAQAJAAAA4HoV3kP08IDx%2BKZ9MfhVJKkqUfWKStzM%2FV3Iz3XAgULpuTe2U6aUoPFut1aogFDMRgXDq9oWQwR4GIaDRGL2nfVt7VMrGxSbyhQtMh51BNpXynuKJFwCoL2h51TmwUWwDkM4JwpmlKSS4fq5%2FXdgVH9QmGMf%2BcHEw30mnP2O77Cd17S69amwLCf0A7l7%2Bov7ZKE4KXyyXlQnPX%2B2mZfL3T%2F8rHR0zEaaKrdOvNiJqYFDjevtThPgVbyHjDfSSJDJYimhuUpXKZp85%2BbOi0ByqCyjnbhIviORaBMVz%2Balx%2FIL%7Ctkp%3ABFBMgo3_2-1k" class="carousel-item">
+                <img src="D:/pictures/föhn.png" alt="Föhn">
+            </a>
+            <a href="https://www.ebay.de/itm/196791824439?_skw=mikrofon&epid=15036047056&itmmeta=01JDPW0CXZVG75HV3A444J88EA&hash=item2dd1b4f037:g:mwUAAOSwer9nLdyn&itmprp=enc%3AAQAJAAAAwHoV3kP08IDx%2BKZ9MfhVJKld4xE2j%2BChVGsdSGUCI3d56qRF4chrVd04ciEr3dLMupFXNh7T6WHih5KcE%2Btn9zkJii%2Bw3tY0nIHe8Ny2JEwPx42hQISxdjvHoYqXqBrtKuv4DEqONlUSzaE8XIeJ7d1I50vtUwzu8Bm3N8sABOYupLLmO9kAluzLyqnHGbxFZEPaRVt21b0J7aS9ECzSCNedZ3XzjDd6NNkDR7jjxbypte3jU52pRJ4Qgo8gnBx3bg%3D%3D%7Ctkp%3ABlBMUNDPgdztZA" class="carousel-item">
+                <img src="D:/pictures/mic.png" alt="Mic">
+            </a>
+            <a href="https://www.ebay.de/itm/264768855464?_skw=Fahhradhelm&epid=11061460077&itmmeta=01JDPW30DS31FNBS8EBW6DA3R7&hash=item3da5741da8%3Ag%3ArHwAAOSwwZ1lQhKO&itmprp=enc%3AAQAJAAAAwHoV3kP08IDx%2BKZ9MfhVJKmNDfcuTj3avWangTJUX2F6j7aq9eOHt8LJu0HouQgmRH0PHAU0TBWNO9Dc8jXhzfGTBZff8X4mFfR9Sx7pjDSf1VhoeuATz%2FLstuHSipXax2Axyk%2BoAHshqdk%2BIDTPOJV8vlHil1tU0U1tHVvnXjD%2BCkXOGCyztQm2yvmyNpM4u78xUdUaNg%2BtKZ6UKdXoLuCdZxnYGkEj5WpMsPsu1YEcweB2Mo%2FUwcJAl7BnC6PwLA%3D%3D%7Ctkp%3ABlBMUIiHjNztZA&var=564594458441" class="carousel-item">
+                <img src="D:/pictures/fahrradhelm.png" alt="Fahrradhelm">
+            </a>
+            <a href="https://www.ebay.de/itm/176704172167?_skw=Fila+schuhe&itmmeta=01JDPW3XAZ33DY9WPYQ67HMWDX&hash=item292463b087:g:swMAAOSwFMJnRYhn&itmprp=enc%3AAQAJAAAA8HoV3kP08IDx%2BKZ9MfhVJKkDBw%2BDi6YIZ9rdXorjjLUdv2C5ZcSY6JcoxKrEMUV8ufaWFZZwCeju%2B4rBwfFD97kK0m%2BQj%2Bh7pmqnKgyf0ZduTWmD4KTifTBfxa7LqYOmHZdVYUsp1oA8YbjiqWsVKgsT5rdFG%2FQDR28DiS4MYMNAelxRjpnh0bQ%2FgQfKW237qwGVYld05PKiCED68xtfhbPLR8f3t5SEH1zNGFJpiWuJWBsytM0lxl7g2Rf02fYN%2B5QOWxFXKPF%2FLGbmoGk4HV%2FTAWEHflDAa8CMsqlq%2FP6ejqyv7cAIYvhDoip%2FU370gw%3D%3D%7Ctkp%3ABFBM7NWP3O1k" class="carousel-item">
+                <img src="D:/pictures/schuh.png" alt="FILA Schuh">
+            </a>
+            <a href="https://www.ebay.de/itm/395942598835?_skw=gaming+pc+wei%C3%9F&itmmeta=01JDPW6XQK6ZFDGKE2H5CQNJYT&hash=item5c300498b3:g:Fo4AAOSwETxnMq4d&itmprp=enc%3AAQAJAAAA8HoV3kP08IDx%2BKZ9MfhVJKkpYc9FWXMofwy62xW4CdQqlalnry%2FeXLEJxHQ6zwIouZ3LtqN%2FTksvUlhiMNWbU4S26KevwvykX1CCgOcfAH7%2BZIIoErr2dquVJ9y%2FaHOhi0T5Uf8RAfcc4LdJOoOzl%2F79oTjkfUO77oQC4ba53vMERq5%2B0qRsZCMXIPSx9IkVIKwoaCEpjCSkfnFjt7V593wWTEbQV%2B0%2F8W0e%2FcX17PNT4IYof%2F5wDQXDxBOTTTHPmc%2BCxhnF6aqvxQpemaOOS58KlSx0Q9vh%2FW9cgopYJWvt8C8CVodFjkEaaU9hMEgnVA%3D%3D%7Ctkp%3ABk9SR_7bm9ztZA" class="carousel-item">
+                <img src="D:/pictures/pc.png" alt="PC">
+            </a>
+            <a href="https://www.ebay.de/itm/363767583266?_skw=gaming+keyboard&itmmeta=01JDPW8W7M19QXR8QY828G75HX&hash=item54b23cd222%3Ag%3A5dAAAOSw9j1ko-ig&itmprp=enc%3AAQAJAAAA8HoV3kP08IDx%2BKZ9MfhVJKkZjTErtS9eaAg6oRUgFMp4GxWffNTrWB6HwmwtUDwLaI657OZtGI%2BZgHKAMy3JYibAOO8Vtuwy9mOTLRIEDKRLMt6W5%2F0IP3rYSuZ0JU%2FJr%2BKylJpelrrFrfdZ%2BIfd4rII2Si%2F4fTvuIYhTJt%2FwOgeutkSLVdkjSy9y4U42fviuNy9EHVqxmmjlpNutr040yaIFYcCqakU3vNm%2BGwWK4RU9vKfXb9A03dN0IbP8Rsa2JAogSHRERxlQJiaFnusRRVuq6yIkbaKNUX3Avv%2Fdyxw4Zb3cesOazacPmdniP%2FWBg%3D%3D%7Ctkp%3ABk9SR4DEo9ztZA&var=632982269832" class="carousel-item">
+                <img src="D:/pictures/keyboard.png" alt="keyboard">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<div class="content-wrapper"> 
+    <h2>Die Last Minute Deals!</h2> 
+        <div class="carousel-container">
+            <div class="carousel">
+                <a href="https://www.ebay.de/itm/355674997595?_skw=Lautsprecher+LED&itmmeta=01JDSEVVB9732S3VSZFWC6MQVB&hash=item52cfe1c35b:g:5e4AAOSw7IBnOvDD&itmprp=enc%3AAQAJAAAA8HoV3kP08IDx%2BKZ9MfhVJKmMjUIj%2BPux6gZDcRdCJl1R9wvJ1Fwj88hBCvttctU9eHbxMBE0Qr9Roov7l54LvXY9S2NAnrlQ0UiBqTVw1hSd06AVofHtxoMFz8SsGQ6DLcyOP%2Fu1SO7Plc%2B6yIdQI5ZF%2FKEBX2xTVnThJpuzWC60HjAIFThcJlSe%2BHM191EzbhxV8zJr%2FIKQPahsfHX6k1PbwE9yN9o%2BWiL2lHHpGsWLkEIHLuUqaqthdBvpGCYrfWLMBKXhlMFmyMgLPh4op8XJMPucspb%2FJfB7vC6kQDATfg4stgfxQ%2F%2B7phjwKPfFcA%3D%3D%7Ctkp%3ABk9SR_C1767uZA" class="carousel-item">
+                    <img src="D:/pictures/lautsprecher.png" alt="Lautsprecher">
+                </a>
+                <a href="https://www.ebay.de/itm/326185952619?_skw=sonnenbrille&itmmeta=01JDSF2GGWTMR9F6897SJGBS6V&hash=item4bf232a56b%3Ag%3AXzsAAOSwtEFknnxW&itmprp=enc%3AAQAJAAAA8HoV3kP08IDx%2BKZ9MfhVJKnlMvFn%2B%2Frpj2J6RCo9mptp17lPiPXj8MegM5TyqPn2dx%2BDsuljkXEOFwHSlebRPUz%2FXc7rs0Ebc6BNFsy9d6bQbKtWVrbDW%2BA%2BITZgfPMDUIYvt4EU3sG8B5%2B2XkOAgHsb4dAgeNhD4EYzwNl6R29%2BTKjMCi5X3w%2B9onxma9Pr%2FZ5fkQ1cpP%2BMT9CLPLQKgsmoHthiQDzWH3bMjhDRoWiALJC%2BDW67%2BE5Cgc6c7iU4kHwKjEZAEB2Hfdpns5EGOpwWDsgaUlmniB0A7C6Klzu8D1SvsjDSU6DOvSFY4z3Kkg%3D%3D%7Ctkp%3ABk9SR86Iiq_uZA&var=515292428201" class="carousel-item">
+                    <img src="D:/pictures/sonnenbrille.png" alt="Sonnenbrille">
+                </a>
+                <a href="https://www.ebay.de/itm/231547149650?_trkparms=amclksrc%3DITM%26aid%3D1110006%26algo%3DHOMESPLICE.SIM%26ao%3D1%26asc%3D20231016072133%26meid%3D3518b18d37e941b1b0503ddb9fc3515d%26pid%3D101879%26rk%3D12%26rkt%3D25%26sd%3D354041583177%26itm%3D231547149650%26pmt%3D1%26noa%3D0%26pg%3D3959035%26algv%3DSimPLWebV1CassiniEmbRecallOnly%26brand%3DGildan%26fpg%3D0&_trksid=p3959035.c101879.m1851&itmprp=cksum%3A2315471496503518b18d37e941b1b0503ddb9fc3515d%7Cenc%3AAQAJAAABEOCbAHGm0g2ngc9i53KMpa9j%252FGF%252BhpcrF0xXfAFiMExu3j3aKqqSMRTwqz9ziqDR2BwJnxE72MMu8W5z7G1g8FpyL7HBOp1jC%252BN2diN989WOx40ELd7JafBELwW%252FA6ShyUd491EPjbcffmDANi8sS%252BXxroT38v3%252BtjFE0OAm11Y%252BYioFFhuZN6gU4mgkO7hjU03s5vhNF2GQ1sdC76xA5IuuHGJhiGODkvxs2zDdErDhkwV6zFtB5WSaaKZYyMhr0zjDjixfq0myM3%252FXlgpwTjLPeLMXny90NmM%252F0MIAQEpISijmZBVeyePdtheJdybu1nH6%252B7IQAwuVOMVQvMKnrpHCqk5EscqnEkmDR4qS%252FV6L%7Campid%3APL_CLK%7Cclp%3A3959035&itmmeta=01JDSF47X7MPGX8A0E9KBEFVK7" class="carousel-item">
+                    <img src="D:/pictures/tshirt.png" alt="Funny T-Shirt">
+                </a>
+                <a href="https://www.ebay.de/itm/285700081699?_skw=backformen&itmmeta=01JDSF5855650NNF0YWVRJBV19&hash=item42850d4823%3Ag%3AFTgAAOSwQiRlyzhe&itmprp=enc%3AAQAJAAAAwHoV3kP08IDx%2BKZ9MfhVJKnQc6khI9BuD3HocmLibpLB%2F2n3XuGRh2jATRkNwqpOMhN2qzu3rKgGPobOtTIum2VA77NGzGhyW%2Bi86EhcUNMzUup3aDDWX7kybi9G85zvBKuh%2Bt2P3DOYOM7jodch0p1imdnemAE%2BCTmofIGiRBhDjw7cYw4JRgGfZnstsX6%2FadeaUF2mzu4iGmiSLxtsTh4Xm304k8CLTOgPYc9R%2Bzw9%2FK8C8HFd4XnkbM3azfgDfg%3D%3D%7Ctkp%3ABlBMUNyCla_uZA&var=587725335066" class="carousel-item">
+                    <img src="D:/pictures/backform.png" alt="Backform">
+                </a>
+                <a href="https://www.ebay.de/itm/285527971109?_skw=weihnachtssocken&itmmeta=01JDSF67CEGKZRGDRMWKT6Z7ZF&hash=item427acb1525%3Ag%3AF40AAOSwRANlu6AB&itmprp=enc%3AAQAJAAAA8HoV3kP08IDx%2BKZ9MfhVJKnceT5kOWHbmU9if0wjDSdIhXbci5I16TzUebXtQ62buT7%2BIDQRCVoqoRZfj0RR84FMNfQ6FABh7e2XO2QPzTkFjVOknapuOEwqQ6x2H6VoovJi%2FIBuh3Boe27PT%2BvJMeRQ0BrU8ZoT6pBrDKczS%2FrYxucKaz3qEVH96N5JDP9AKD4USyGt1%2BRgjmVyAAEk8ubTdXHzKiiSbUZnJ6BWesZVC4wdEZyilb32DHdTnvGrxY13Nda%2BW36VFOyjjLKH6UddgvGCeEBPhhnyBDjQM%2F8sp8730mwYSerZkd%2FRh7hIYA%3D%3D%7Ctkp%3ABFBMwPaYr-5k&var=587702865610" class="carousel-item">
+                    <img src="D:/pictures/socken.png" alt="Weihnachtssocken">
+                </a>
+                <a href="https://www.ebay.de/itm/135402697495?_skw=thermomix&epid=12063555442&itmmeta=01JDSF99B4F7DCBJ8EGFG017NH&hash=item1f86a13317:g:lE8AAOSw5NZnRefa&itmprp=enc%3AAQAJAAAAwHoV3kP08IDx%2BKZ9MfhVJKmbAQN9cKJ3HvMglnImVTkL7bGgti8zhg6mKCQY855Pm1t2SeafPMBbgh%2Fai0X6bI4zrg2QGo5gImyKHz0naeR7lkcKbbqg1hhAVG7dpceqRm%2BO9HSpVcx%2Bv%2Bbu4fwjzbJK96VLStyvE%2FJ220sMYFzjBQeVmisG7DFOiTlei2wHiW8Q5y6ZEZDP75sTtrg%2FozqLWcIFSQtczODbI6Fe2sqc2FRkbZYromKY4tuHSrsKDg%3D%3D%7Ctkp%3ABlBMUNyVpa_uZA" class="carousel-item">
+                    <img src="D:/pictures/fake.png" alt="Thermomix">
+                </a>
+                <a href="https://www.ebay.de/itm/304998075005?_skw=digital+thermometer&itmmeta=01JDSFA33JRRKXBNHHX8N0ZK17&hash=item47034d4a7d%3Ag%3AvfEAAOSwQGRnPL39&itmprp=enc%3AAQAJAAAA0HoV3kP08IDx%2BKZ9MfhVJKlLcnriEtPtfFCSDh9lmHTepvWVtIgUEVNfX8DLzFkDFUGyXPNTQCc4b37RJqIo0eqOejKLSTSNpLTXsjCMmIslSfPBXB8qQ8ych5N6AAgd0rJ%2FFYipR%2BKw5WVX65bniIxYrVj6w%2F%2BvYXlIRoH%2Bjt4nFWrmNnygu7SyHutg0zRtm7rRW9fsvIQ1FWhh2LWPX4nxwroka%2BnhnPwwjtrwDd0g1FmQIy6J6PuJ0ZiMYUGw5Izm0duht7ZqzfSRC3yKzao%3D%7Ctkp%3ABk9SR_6xqK_uZA&var=603970818101" class="carousel-item">
+                    <img src="D:/pictures/thermo.png" alt="Dig Thermomether">
+                </a>
+            </div>
+        </div>
+    </body>
+    </html>
+
+
+
+
+
+    <div class="content-wrapper"> 
+        <h2>Empfohlene Angebote für Sie</h2> 
+            <div class="carousel-container">
+                <div class="carousel">
+                    <a href="https://www.ebay.de/itm/135218559485?_skw=gaming+pc&itmmeta=01JDSFVP2X369RMXVJ3SR6NFZP&hash=item1f7ba779fd:g:3P0AAOSwQXJm1viD&itmprp=enc%3AAQAJAAAAwHoV3kP08IDx%2BKZ9MfhVJKm67Lmoo2Zv1TuP7xnYL7rlvtgSvE0%2BLoD2UBRhoQjiyy1dLodv7bbfuaM2X7TIs2Tm6aBZw5H7usXi76gEUgmeAhLkvNUxTxrLm90Na%2F3B6X0nGQH7FV%2BwThQ%2BSGVl3Bpmkh4AYqwrDzLMlcHsZCZR6qWbnibZ2dcSrJAUEvbVSB%2BuiacWEkNoIFuEDfLgoqS21O3ZXVGi7%2FdFU2XDe1iCqSx8yl0w%2FYnYveVielqfLw%3D%3D%7Ctkp%3ABlBMUM7h7q_uZA" class="carousel-item">
+                        <img src="D:/pictures/gamingpc.png" alt="Gaming PC">
+                    </a>
+                    <a href="https://www.ebay.de/itm/274936154985?_skw=Mousepad&itmmeta=01JDSFWARSEN31T0T7GS4V2ZYJ&hash=item400378cb69:g:2RUAAOSwbWNhNiYo&itmprp=enc%3AAQAJAAAAwHoV3kP08IDx%2BKZ9MfhVJKk02A2jYNvTItWRjAgdqip5h0d4VcZTDYXXEgWDreneL%2FYkmZkOennUFg2kbP3zBPiIxrqvJR3c7grOJw35ZH72Tmi%2Bnt9%2B3suKbXL%2FyLuzcG7cVUzzyomHlSCQrCISV9%2FHPioqAhAnJg8s04jnzevsbX7JgDSHsi%2BJmHkPx8%2BZA6MtiqrI6TSEVPym44bUdYUADmf4t%2FnOYY1T0CQ15Y8LeaG3G84eHwMg9QXyNrFI7Q%3D%3D%7Ctkp%3ABk9SR8Ss8a_uZA" class="carousel-item">
+                        <img src="D:/pictures/mousepad.png" alt="Mousepad">
+                    </a>
+                    <a href="https://www.ebay.de/itm/375701655371?_skw=Fu%C3%9Fball&epid=7061542031&itmmeta=01JDSFWGW93GTXGR13XEK6TGKX&hash=item5779904f4b:g:IgcAAOSwqkRnBnIE&itmprp=enc%3AAQAJAAAA4HoV3kP08IDx%2BKZ9MfhVJKmB%2FIeM41UvyxZvUcjumEgM5D8mJBMlTyQdf1%2FHexTM2dtrZS9MwhzHAiujSCYKd0tgX6l%2F176P5JK2UVovLpwfP2d0UYGapWFKcpfo9pZm54Z9%2FeyB1rNzHWSX1Q%2B39MPoxItr1m%2B4NR3%2FICrqUcbcmcKVecAGgSwJAeFNiNhs6T8Uaux3oglTG%2FHeZjVueI4QmM6msBkOOT0QCgopn4GAzzdOLqQ75VMcBcx03p0pHhAiQj5f30Brab3zkM4PPq4e0lzN%2Fuu2CmNlSLijGdXw%7Ctkp%3ABk9SR9CO8q_uZA" class="carousel-item">
+                        <img src="D:/pictures/fußball.png" alt="Fußball">
+                    </a>
+                    <a href="https://www.ebay.de/itm/403926481338?_skw=Gaming+Mouse&epid=23037145560&itmmeta=01JDSFXJF25GHRA6MF94XZ7BPH&hash=item5e0be4f9ba:g:etsAAOSwHwVlfDch&itmprp=enc%3AAQAJAAAA8HoV3kP08IDx%2BKZ9MfhVJKkLwMEoPN4bjl33%2Fdpa469KNyb9wtdBG530ISt6NkkhXI10b6x3vaXY4%2FDhva6FhuTo%2FYdOOVAxDBhaLis%2B6uAtPY%2BPGw9WdFtH9I8YXynxrhOtFA4qtj5aXxglDLrXQf6AoP7RDEC7wkGCZyKiSH2TzyjYtpgVFuwD6a5Mu3qiOPb85U7S4iHLWTZjATD4DZRk%2B50jxd52RiHKKSP2SDGcs89unxOJIr5WsgNEnvvrXJtahw7ezGGOxVIEHXOr8baJ6Rd4kuJWnb0uEqD7z6zDKGT461LfvcvO77KvnGJ7UQ%3D%3D%7Ctkp%3ABFBM3qf2r-5k" class="carousel-item">
+                        <img src="D:/pictures/maus.png" alt="Gaming Maus">
+                    </a>
+                    <a href="https://www.ebay.de/itm/134737353319?_skw=Mikrofon&epid=10064664779&itmmeta=01JDSFYC0SY2V6TH3G9JXRKVJJ&hash=item1f5ef8da67:g:rJYAAOSwTaFl5tAo&itmprp=enc%3AAQAJAAAA8HoV3kP08IDx%2BKZ9MfhVJKkQX219IbfDL89g%2Bi%2BzReC77X8cfA%2BrZupPHHkKXVTRTY91G%2BViiI3E9tt9Fw0zQLkhU3hZck%2Ff4puISIgcyDEO4lCaiARgCWnOxuW0AH82a%2FtTgLgIBvcMLFZFu9sBcyYoM%2BW1JDFrXTxvpo9wmU%2FP%2FwSQi10H9vXcRhr9NgfQQQzinm6L477Se197jd7h2y%2FRbh9UhussIHLckwPmTGO%2BipPQE5b95HXuCX03j%2BDlWQKJspRhw01pxMcccR6yoE6QjXZXlzRtSovjyPw%2FJ2SA8gIvbMiOskrE0zT00qZjgw%3D%3D%7Ctkp%3ABFBMjsH5r-5k" class="carousel-item">
+                        <img src="D:/pictures/mikrofon.png" alt="Mikrofon">
+                    </a>
+                    <a href="https://www.ebay.de/itm/266821472099?_skw=gaming+tastatur&epid=26055065252&itmmeta=01JDSFZNXKXDZNQ6C27HCNNVVC&hash=item3e1fcc8f63:g:ggMAAOSwF0ZmS7e-&itmprp=enc%3AAQAJAAAA8HoV3kP08IDx%2BKZ9MfhVJKm57f44kuzrAGdUYbxGB--IpEKyY2Gn%2FIuifJfGymU2XtgIsEmAylue1zP1riPBRn0lguMhSEMJOVHWw2P6x8rz5CU5mqqbUpz%2B8zaCwEVX%2B8vs3T96niwSY4btDz%2Bf07fS9kUlhwkGnvKA5W9Mc4QFNwS0dOGYm6Qw8p0PKx1ox83OVQUVmu3z7z4GZFTAumLtBKyok6E%2BavuSy6TcME0rPG7Ns0bmnnmR8S7Re4V%2Fdh7gVmmDxyuVrWDFF8qv63rFrSZgdSvTmuDRFrwndFKEQKf6tefq9mkj1HAWkftsfg%3D%3D%7Ctkp%3ABk9SR_ze_q_uZA" class="carousel-item">
+                        <img src="D:/pictures/tastatur.png" alt="Gaming Tastatur">
+                    </a>
+                    <a href="https://www.ebay.de/itm/405382709256?_skw=trikot+deutschland&itmmeta=01JDSG0GBDPFHAY8GF0H9RHQVB&hash=item5e62b14008%3Ag%3A5QQAAOSwx4RnRoBx&itmprp=enc%3AAQAJAAAA0HoV3kP08IDx%2BKZ9MfhVJKnAQbWjp1q359ftvEyMffWzupb8hvK2I3K%2F8h4XfsoBqeeZnYQcbCjSJ8sZyfbNpa3MrTN4G9%2Be5FfKXdxtcpwHpumoK%2FSkXqvN1DyDKX9TQTZCA0j7FIlAqocKk3MxsU0anaDQsZyAuvzR1Vj8hesITVGuZoHTUAJ2nlQbV%2FVALrBO3%2B3y%2FxiUOkTW1mNj7NABIzQ0z9Vqd4LxnpM7iOqBzdoa83muolPWUYLGweyFMcItERSVfqmocBhn52imgFE%3D%7Ctkp%3ABk9SR-SFgrDuZA&var=675601246149" class="carousel-item">
+                        <img src="D:/pictures/trikot.png" alt="Trikot">
+                    </a>
+                </div>
+            </div>
+        </body>
+        </html>
+    
+        
+       
+        <h6>Hallo. Diese Seite habe ich ganz alleine im HTML Code und CSS code erstellt. Bitte kein Copyright :)</h6>
+ 
+
+
+
+
+
+
+
+
